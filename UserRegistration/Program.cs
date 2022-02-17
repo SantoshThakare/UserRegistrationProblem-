@@ -14,7 +14,8 @@ namespace UserRegistration
             Console.WriteLine("Enter Option " +
                 "\n 1. ValidatingFirstName" +
                 "\n 2. ValidatingLastName" +
-                "\n 3. ValidatingEmailId ");
+                "\n 3. ValidatingEmailId" +
+                "\n 4. ValidatingPhoneNumber ");
             RegexExample regex = new RegexExample();
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -27,6 +28,9 @@ namespace UserRegistration
                     break;
                 case 3:
                     regex.ValidatingEmailId();
+                    break;
+                case 4:
+                    regex.ValidatingPhoneNumber();
                     break;
 
                 default:
