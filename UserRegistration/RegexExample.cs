@@ -81,5 +81,25 @@ namespace UserRegistration
 
             }
         }
+        public void ValidatingPassWord()
+        {
+            string[] passwordInput = { "Santosh1062", "santosh", "San123" };
+            string passwordPattern = @"[a-z,A-Z,0-9]{8,}$";
+            Regex regex = new Regex(passwordPattern);
+            for (int i = 0; i < passwordInput.Length; i++)
+            {
+                bool result = regex.IsMatch(passwordInput[i]);
+                if (result)
+                {
+                    Console.WriteLine(passwordInput[i] + " ----->Valid");
+                }
+                else
+                {
+                    Console.WriteLine(passwordInput[i] + " ----->InValid");
+                }
+
+            }
+        }
+
     }
 }

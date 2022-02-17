@@ -15,7 +15,8 @@ namespace UserRegistration
                 "\n 1. ValidatingFirstName" +
                 "\n 2. ValidatingLastName" +
                 "\n 3. ValidatingEmailId" +
-                "\n 4. ValidatingPhoneNumber ");
+                "\n 4. ValidatingPhoneNumber" +
+                "\n 5. ValidatingPassWord ");
             RegexExample regex = new RegexExample();
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -32,6 +33,10 @@ namespace UserRegistration
                 case 4:
                     regex.ValidatingPhoneNumber();
                     break;
+                case 5:
+                    regex.ValidatingPassWord();
+                    break;
+
 
                 default:
                     break;
