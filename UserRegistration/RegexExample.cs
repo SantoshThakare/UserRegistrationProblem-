@@ -26,5 +26,21 @@ namespace UserRegistration
                 Console.WriteLine("Invalid");
             }
         }
+        public void ValidatingLastName()
+        {
+            Console.WriteLine("Validating the Last Name");
+            Regex regex = new Regex(pattern);
+            Console.WriteLine("Enter the Last Name");
+            string input = Console.ReadLine();
+            bool result = regex.IsMatch(input);
+            if (result)
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
+        }
     }
 }
