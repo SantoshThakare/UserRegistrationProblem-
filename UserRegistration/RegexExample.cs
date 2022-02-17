@@ -9,7 +9,7 @@ namespace UserRegistration
 {
     internal class RegexExample
     {
-        string userpattern = "^[A-Z][a-z]{2,}$";
+        string userpattern = "@^[A-Za-z]{0,}[0-9]*$";
         string[] EmailInput = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com", "abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com", "abc", "abc@.com.my", "abc123@gmail.a", "abc123@.com", "abc123@.com.com", ".abc@abc.com", "abc()*@gmail.com", "abc@%*.com", "abc..2002@gmail.com", "abc.@gmail.com", "abc@abc@gmail.com", "abc@gmail.com.1a", "abc@gmail.com.aa.au" };
         string pattern = (@"^[a-zA-Z0-9]+([\.\+\-][a-zA-Z0-9]+)?@[a-zA-Z0-9-]+(\.[a-zA-Z]{2,}(\.[a-zA-Z]+)?)$");
         public void ValidatingFirstName()
@@ -83,8 +83,8 @@ namespace UserRegistration
         }
         public void ValidatingPassWord()
         {
-            string[] passwordInput = { "Santosh1062", "santosh", "San123" };
-            string passwordPattern = @"[a-z,A-Z,0-9]{8,}$";
+            string[] passwordInput = { "Sant", "santosh", "SEN9" };
+            string passwordPattern = @"^[A-Z]{0,}[a-z]{2,}$";
             Regex regex = new Regex(passwordPattern);
             for (int i = 0; i < passwordInput.Length; i++)
             {

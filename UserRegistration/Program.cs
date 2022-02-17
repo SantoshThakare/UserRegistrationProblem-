@@ -10,13 +10,13 @@ namespace UserRegistration
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to validating User Registration using Regular Expression");
+            Console.WriteLine("Welcome to validating User Registration using Regex");
             Console.WriteLine("Enter Option " +
                 "\n 1. ValidatingFirstName" +
                 "\n 2. ValidatingLastName" +
                 "\n 3. ValidatingEmailId" +
                 "\n 4. ValidatingPhoneNumber" +
-                "\n 5. ValidatingPassWord ");
+                "\n 5. one uppercase in 8 min char ");
             RegexExample regex = new RegexExample();
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
