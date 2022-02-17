@@ -11,7 +11,10 @@ namespace UserRegistration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to validating User Registration using Regular Expression");
-            Console.WriteLine("Enter Option 1 or 2");
+            Console.WriteLine("Enter Option " +
+                "\n 1. ValidatingFirstName" +
+                "\n 2. ValidatingLastName" +
+                "\n 3. ValidatingEmailId ");
             RegexExample regex = new RegexExample();
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -21,6 +24,9 @@ namespace UserRegistration
                     break;
                 case 2:
                     regex.ValidatingLastName();
+                    break;
+                case 3:
+                    regex.ValidatingEmailId();
                     break;
 
                 default:
