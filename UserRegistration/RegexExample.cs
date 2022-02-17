@@ -9,7 +9,7 @@ namespace UserRegistration
 {
     internal class RegexExample
     {
-        string pattern = "^[A-Z]{1}[a-z]{8,}$";
+        string pattern = "^[A-Z][a-z]*[0-9][a-z]*$";
         public void ValidatingFirstName()
         {
             Console.WriteLine("Validating the First Name");
