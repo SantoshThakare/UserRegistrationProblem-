@@ -16,7 +16,7 @@ namespace UserRegistration
                 "\n 2. ValidatingLastName" +
                 "\n 3. ValidatingEmailId" +
                 "\n 4. ValidatingPhoneNumber" +
-                "\n 5. one uppercase in 8 min char ");
+                "\n 5. One Spacial Character ");
             RegexExample regex = new RegexExample();
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)

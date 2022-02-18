@@ -83,8 +83,8 @@ namespace UserRegistration
         }
         public void ValidatingPassWord()
         {
-            string[] passwordInput = { "Sant", "Santosh1", "2SEN" };
-            string passwordPattern = @"[A-Z]{1}[a-z]{3,14}";
+            string[] passwordInput = { "Sant#", "Santosh1", "2SEN","Santo#s" };
+            string passwordPattern = @"[A-Z]{1,}[a-z0-9]{3,14}[@#]{1}[a-z0-9]{1,4}";
             Regex regex = new Regex(passwordPattern);
             for (int i = 0; i < passwordInput.Length; i++)
             {
