@@ -14,7 +14,7 @@ namespace UserRegistration
             Console.WriteLine("Enter Option " +
                 "\n 1. ValidatingFirstName" +
                 "\n 2. ValidatingLastName" +
-                "\n 3. ValidatingEmailId" +
+                "\n 3. ValidatingEmailId Provided all Email Sample separately" +
                 "\n 4. ValidatingPhoneNumber" +
                 "\n 5. One Spacial Character ");
             RegexExample regex = new RegexExample();
